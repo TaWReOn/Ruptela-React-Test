@@ -1,0 +1,81 @@
+.post-instance-wrapper {
+
+  .post {
+
+    .post-header {
+      min-height: 44px;
+      align-items: center;
+      background-color: $post-header-blue;
+      color: $color-white;
+      display: flex;
+      font-weight: 700;
+      justify-content: space-between;
+      line-height: 1.25;
+      padding: 0.75em 1em;
+      position: relative;
+
+      .post-title {
+        white-space: nowrap;
+        flex: 1;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+        .post-id {
+          white-space: nowrap;
+        }
+
+      }
+
+      .post-title + .post-id {
+        padding-left: 5px;
+      }
+
+    }
+
+    .post-body {
+      overflow: hidden;
+      min-height: 64px;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      padding: 15px;
+      background-color: $post-body-gray;
+      color: $post-body-header-color;
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center;
+      justify-content: flex-start;
+    }
+
+    &.right-sidebar {
+
+      margin-bottom: 15px;
+
+      .post-body-text {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-height: 100px;
+        white-space: normal;
+      }
+
+    }
+
+    &.post-list {
+      .post-body-text {
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+    }
+
+    &.preview {
+
+      .post-title, .post-body-text {
+        white-space: normal;
+        word-break: break-word;
+      }
+
+    }
+
+  }
+
+}

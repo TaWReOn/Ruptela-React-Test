@@ -1,0 +1,55 @@
+.app {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: stretch;
+  justify-content: flex-start;
+  height: 100vh;
+  margin: 0;
+}
+
+.content {
+  margin: 1em 0;
+  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  overflow: hidden;
+  flex-flow: row nowrap;
+  flex: 1;
+}
+
+.main-content-block {
+  display: flex;
+  flex: 5;
+  overflow-y: auto;
+}
+
+.posts-list-page {
+  width: 100%;
+  display: flex;
+
+  .post-list-wrapper {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .content {
+    flex-flow: column nowrap;
+  }
+  .right-sidebar {
+    display: none;
+  }
+}
+
+.post-page-add {
+  width: 100%;
+
+  .post-page-form {
+    margin-bottom: 30px;
+  }
+}
+
+.footer {
+  padding: 0;
+}
